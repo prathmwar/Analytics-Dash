@@ -1,3 +1,5 @@
+/* eslint-disable react/no-unescaped-entities */
+
 "use client";
 
 import { analytics } from "@/utils/analytics";
@@ -50,7 +52,7 @@ const AnalyticsDash = ({
   return (
     <div className="flex flex-col gap-6">
       <div className="grid w-full mx-auto grid-cols-1 sm:grid-cols-2 gap-6" >
-        <Card className="w-full max-auto max-w-xs" style={{ backgroundColor: 'rgba(0, 0, 0, 0.8)' }}>
+        <Card className="w-full max-auto max-w-xs" style={{ backgroundColor: "rgba(0, 0, 0, 0.8)" }}>
           <p className="text-tremor-default text-dark-tremor-content">
             Avg. visitors/day
           </p>
@@ -58,7 +60,7 @@ const AnalyticsDash = ({
             {avgVisitorsPerDay}
           </p>
         </Card>
-        <Card className="w-full max-auto max-w-xs" style={{ backgroundColor: 'rgba(0, 0, 0, 0.8)' }}>
+        <Card className="w-full max-auto max-w-xs" style={{ backgroundColor: "rgba(0, 0, 0, 0.8)" }}>
           <p className="flex gap-2.5 items-center text-tremor-default text-dark-tremor-content">
             Visitors today
             <Badge
@@ -73,7 +75,7 @@ const AnalyticsDash = ({
         </Card>
       </div>
 
-      <Card className="flex flex-col sm:grid grid-cols-4 gap-6"style={{ backgroundColor: 'rgba(0, 0, 0, 0.8)' }} >
+      <Card className="flex flex-col sm:grid grid-cols-4 gap-6"style={{ backgroundColor: "rgba(0, 0, 0, 0.8)" }} >
         <h2 className="w-full text-dark-tremor-content-strong text-center sm:left-left font-semibold text-xl">
           This week's top visitors:
         </h2>
