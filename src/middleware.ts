@@ -9,7 +9,7 @@ export default async function middleware(req: NextRequest) {
         // Call the track method on the instance
         try {
             await analyticsInstance.track("pageview", {
-                page: "/",
+                page: "/analytics",
                 country: req.geo?.country,
             });
         } catch (err) {
@@ -22,5 +22,5 @@ export default async function middleware(req: NextRequest) {
 }
 
 export const matcher = {
-    matcher: ["/"],
+    matcher: ["/analytics"],
 };
